@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,22 +15,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CBUS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWN-Vk-VPh">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.086046475270000006" green="0.1182049513" blue="0.84892528550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmericanFlag" translatesAutoresizingMaskIntoConstraints="NO" id="12R-FM-irm">
-                                <rect key="frame" x="67.5" y="103.5" width="240" height="240"/>
+                                <rect key="frame" x="67.666666666666686" y="176" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="SUG-mf-kRf"/>
                                     <constraint firstAttribute="width" constant="240" id="kLH-YU-FmZ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC7-Ih-tth">
-                                <rect key="frame" x="59" y="403.5" width="257" height="90"/>
+                                <rect key="frame" x="59" y="476" width="257" height="90"/>
                                 <color key="backgroundColor" red="0.87383010786802029" green="0.0" blue="0.0081805838557780525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="257" id="S0p-cB-87c"/>
@@ -47,7 +47,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-TE-ldR">
-                                <rect key="frame" x="59" y="528.5" width="257" height="90"/>
+                                <rect key="frame" x="59" y="601" width="257" height="90"/>
                                 <color key="backgroundColor" red="0.87383010790000004" green="0.0" blue="0.008180583856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="4uC-qN-6Vn"/>
@@ -62,9 +62,12 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aboutSegue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q2D-h0-frm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify My Vote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-0v-v4N">
-                                <rect key="frame" x="39" y="23.5" width="297" height="60.5"/>
+                                <rect key="frame" x="39" y="95.666666666666671" width="297" height="60.666666666666671"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="297" id="L5w-uZ-qJz"/>
                                     <constraint firstAttribute="height" constant="60.5" id="Nu5-Df-f9N"/>
@@ -91,16 +94,73 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="backgroundGradientView" destination="hWN-Vk-VPh" id="pJ2-zu-u6H"/>
+                        <segue destination="RgA-KS-3Ks" kind="modal" identifier="AboutViewController" modalTransitionStyle="crossDissolve" id="hnh-Yp-utz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="126.38680659670166"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="oJh-Ze-BNF">
+            <objects>
+                <viewController id="RgA-KS-3Ks" customClass="AboutViewController" customModule="CBUS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bEL-M0-1CI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pto-Gk-wZJ" userLabel="Gradient Background">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" red="0.086046475270000006" green="0.1182049513" blue="0.84892528550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMm-gs-Zqd">
+                                <rect key="frame" x="17.666666666666671" y="69" width="120.00000000000001" height="54"/>
+                                <color key="backgroundColor" red="0.87383010790000004" green="0.0" blue="0.008180583856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="igU-ZA-I5H"/>
+                                    <constraint firstAttribute="height" constant="54" id="myb-2L-jqk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mainMenuSegue:" destination="RgA-KS-3Ks" eventType="touchUpInside" id="Ydg-zM-mHb"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="mainMenuSegue" modalTransitionStyle="crossDissolve" id="Yik-v5-kOo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pto-Gk-wZJ" firstAttribute="leading" secondItem="Qh1-N6-cgT" secondAttribute="leading" id="JUj-ab-3VI"/>
+                            <constraint firstItem="Qh1-N6-cgT" firstAttribute="trailing" secondItem="Pto-Gk-wZJ" secondAttribute="trailing" id="OHm-i7-ugl"/>
+                            <constraint firstItem="xMm-gs-Zqd" firstAttribute="centerY" secondItem="bEL-M0-1CI" secondAttribute="centerY" constant="-270" id="U9e-pP-lAZ">
+                                <variation key="heightClass=regular" constant="-310"/>
+                            </constraint>
+                            <constraint firstItem="Pto-Gk-wZJ" firstAttribute="top" secondItem="Qh1-N6-cgT" secondAttribute="top" id="W71-4a-2k9"/>
+                            <constraint firstItem="Qh1-N6-cgT" firstAttribute="bottom" secondItem="Pto-Gk-wZJ" secondAttribute="bottom" id="YM3-3Z-qg6"/>
+                            <constraint firstItem="xMm-gs-Zqd" firstAttribute="centerX" secondItem="bEL-M0-1CI" secondAttribute="centerX" constant="-110" id="Yuk-Ae-152"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qh1-N6-cgT"/>
+                    </view>
+                    <connections>
+                        <outlet property="gradientBackgroundView" destination="Pto-Gk-wZJ" id="ktx-O4-T7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EeA-Kg-Yab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="126"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="AmericanFlag" width="341.5" height="341.5"/>
+        <image name="AmericanFlag" width="341.33334350585938" height="341.33334350585938"/>
     </resources>
 </document>
