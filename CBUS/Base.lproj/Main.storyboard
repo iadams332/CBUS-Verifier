@@ -23,21 +23,21 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmericanFlag" translatesAutoresizingMaskIntoConstraints="NO" id="12R-FM-irm">
-                                <rect key="frame" x="67.5" y="43.5" width="240" height="240"/>
+                                <rect key="frame" x="67.5" y="103.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="SUG-mf-kRf"/>
                                     <constraint firstAttribute="width" constant="240" id="kLH-YU-FmZ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC7-Ih-tth">
-                                <rect key="frame" x="59" y="363.5" width="257" height="90"/>
+                                <rect key="frame" x="59" y="403.5" width="257" height="90"/>
                                 <color key="backgroundColor" red="0.87383010786802029" green="0.0" blue="0.0081805838557780525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="257" id="S0p-cB-87c"/>
                                     <constraint firstAttribute="height" constant="90" id="SM7-6c-YPc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="30"/>
-                                <state key="normal" title="Verify My Vote">
+                                <state key="normal" title="Verify">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -47,7 +47,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-TE-ldR">
-                                <rect key="frame" x="59" y="488.5" width="257" height="90"/>
+                                <rect key="frame" x="59" y="528.5" width="257" height="90"/>
                                 <color key="backgroundColor" red="0.87383010790000004" green="0.0" blue="0.008180583856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="4uC-qN-6Vn"/>
@@ -63,19 +63,31 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify My Vote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-0v-v4N">
+                                <rect key="frame" x="39" y="23.5" width="297" height="60.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="L5w-uZ-qJz"/>
+                                    <constraint firstAttribute="height" constant="60.5" id="Nu5-Df-f9N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="HFk-0v-v4N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-280" id="CBc-ob-lEM"/>
+                            <constraint firstItem="HFk-0v-v4N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GJl-sZ-FHx"/>
                             <constraint firstItem="hWN-Vk-VPh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GRY-Qo-z9x"/>
                             <constraint firstItem="hWN-Vk-VPh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q8p-9u-GV9"/>
                             <constraint firstItem="hWN-Vk-VPh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ViQ-FH-sIT"/>
                             <constraint firstItem="NC7-Ih-tth" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dLO-Jw-8w6"/>
                             <constraint firstItem="7PK-TE-ldR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fwe-ff-m9y"/>
                             <constraint firstItem="12R-FM-irm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZh-TX-zPT"/>
-                            <constraint firstItem="NC7-Ih-tth" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="75" id="nkt-Gb-iMF"/>
+                            <constraint firstItem="NC7-Ih-tth" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="115" id="nkt-Gb-iMF"/>
                             <constraint firstItem="hWN-Vk-VPh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ooQ-Tm-Lg9"/>
-                            <constraint firstItem="7PK-TE-ldR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="t9R-hM-g7o"/>
-                            <constraint firstItem="12R-FM-irm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-170" id="z0q-AN-P1r"/>
+                            <constraint firstItem="7PK-TE-ldR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="240" id="t9R-hM-g7o"/>
+                            <constraint firstItem="12R-FM-irm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-110" id="z0q-AN-P1r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
